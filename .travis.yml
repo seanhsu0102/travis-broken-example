@@ -9,7 +9,7 @@ script: phpunit Test.php
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_25ea18859766_key -iv $encrypted_25ea18859766_iv
-  -in oohay-dev.pem.enc -out oohay-dev.pem -d
+  -in oohay-dev.pem.enc -out ~/.ssh/oohay-dev.pem -d
 
 deploy:
   provider: script
