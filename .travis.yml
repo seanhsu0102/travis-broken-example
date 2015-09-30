@@ -14,5 +14,3 @@ before_install:
 deploy:
   provider: script
   script: scripts/deploy.sh
-  on:
-  	branch: master
