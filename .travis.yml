@@ -11,6 +11,5 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_25ea18859766_key -iv $encrypted_25ea18859766_iv
   -in oohay-dev.pem.enc -out oohay-dev.pem -d
 
-deploy:
-  provider: script
-  script: scripts/deploy.sh
+after_success:
+  "curl --user sean:19830102 http://54.250.122.204:5000/deploy/dps"
