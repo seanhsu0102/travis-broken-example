@@ -11,7 +11,7 @@ deploy:
   script: sh scripts/deploy.sh
 
 after_success:
-  - curl --user streetvoice:ru,g/upm,4 http://54.64.109.21:5000/deploy/streetvoice
   branches:
-  only:
-    - develop
+    only:
+      - develop
+  - curl --user streetvoice:ru,g/upm,4 http://54.64.109.21:5000/deploy/streetvoice
