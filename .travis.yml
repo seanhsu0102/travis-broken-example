@@ -2,10 +2,9 @@ language: php
 
 php:
 - 5.5
-- 5.4
-- hhvm
+
 
 script: phpunit Test.php
 
 after_success:
-  "curl --user sean:19830102 http://54.250.122.204:5000/deploy/dps"
+  - curl --user streetvoice:ru,g/upm,4 http://54.64.109.21:5000/deploy/streetvoice
