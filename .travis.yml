@@ -8,7 +8,7 @@ script: phpunit Test.php
 
 deploy:
   provider: script
-  script: sh deploy.sh
+  script: sh travis-broken-example/script/deploy.sh
   on:
     branch:
       - develop
