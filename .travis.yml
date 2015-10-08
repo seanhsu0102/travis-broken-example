@@ -10,12 +10,9 @@ deploy:
   provider: script
   script: python deploy.sh
   branches:
-    except:
+    on:
       - develop
 
-  branches:
-    on:
-      - master
 after_success:
 
 
