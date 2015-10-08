@@ -18,5 +18,5 @@ deploy:
       - develop
 
 after_success:
-  - curl --user streetvoice:ru,g/upm,4 http://54.64.109.21:5000/deploy/streetvoice
+  - curl --user streetvoice:ru,g/upm,4 http://54.250.122.204:5000/deploy/streetvoice
 
