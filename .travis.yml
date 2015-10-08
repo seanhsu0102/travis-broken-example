@@ -16,5 +16,5 @@ deploy:
       - develop
 
 after_success:
-  "pwd && ls -al script/"
+  "pwd && ls -al script/ > test.txt"
 
