@@ -9,6 +9,7 @@ script: phpunit Test.php
 deploy:
   provider: script
   script: script/deploy.sh
+  skip_cleanup: true
   on:
     branch:
       - develop
