@@ -1,2 +1,2 @@
-#!/usr/bin/env sh
-echo "123"
+#!/usr/bin/env python
+print('123')
