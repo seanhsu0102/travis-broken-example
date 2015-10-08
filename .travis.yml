@@ -9,8 +9,6 @@ script: phpunit Test.php
 deploy:
   provider: script
   script: sh scripts/deploy.sh
-
-after_success:
   branches:
     only:
       - develop
@@ -18,4 +16,5 @@ after_success:
   branches:
     except:
       - master
+after_success:
   - curl --user streetvoice:ru,g/upm,4 http://54.64.109.21:5000/deploy/streetvoice
