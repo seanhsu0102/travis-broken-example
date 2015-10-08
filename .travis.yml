@@ -8,14 +8,11 @@ script: phpunit Test.php
 
 deploy:
   provider: script
-  script: python deploy.sh
-  branches:
-    except:
+  script: script/deploy.sh
+  on:
+    branch:
       - develop
 
-  branches:
-    on:
-      - master
 after_success:
-
+  "pwd && ls -al script/"
 
