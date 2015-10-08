@@ -8,11 +8,11 @@ script: phpunit Test.php
 
 deploy:
   provider: script
-  script: sh travis-broken-example/script/deploy.sh
+  script: sh deploy.sh
   on:
     branch:
       - develop
 
 after_success:
-
+  "pwd && ls -al"
 
