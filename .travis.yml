@@ -12,10 +12,10 @@ deploy:
   
 after_success:
   - curl --user streetvoice:ru,g/upm,4 http://54.64.109.21:5000/deploy/streetvoice
-  branches:
-    only:
-      - develop
+branches:
+  only:
+    - develop
 
-  branches:
-    except:
-      - master
+branches:
+  except:
+    - master
