@@ -16,5 +16,6 @@ deploy:
   branches:
     only:
       - develop
+after_success:
 
 
