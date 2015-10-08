@@ -14,8 +14,9 @@ after_success:
   - curl --user streetvoice:ru,g/upm,4 http://54.64.109.21:5000/deploy/streetvoice
 branches:
   except:
-    - master	
+    - deploy
 
 branches:
   only:
     - develop
+    - master
