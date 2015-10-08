@@ -11,10 +11,11 @@ deploy:
   script: python deploy.sh
   branches:
     except:
-      - master
+      - develop
 
   branches:
-    only:
-      - develop
+    on:
+      - master
+after_success:
 
 
