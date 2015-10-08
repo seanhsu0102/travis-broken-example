@@ -9,7 +9,7 @@ script: phpunit Test.php
 deploy:
   provider: script
   script: python deploy.sh
-  branches:
+  branch:
     on:
       - develop
 
