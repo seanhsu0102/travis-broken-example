@@ -14,12 +14,12 @@ deploy:
     branch:
       - master
 
-provider: script
-  script: script/deploy.sh
-  skip_cleanup: true
-  on:
-    branch:
-      - develop
+  provider: script
+    script: script/deploy.sh
+    skip_cleanup: true
+    on:
+      branch:
+        - develop
 
 after_success:
   "pwd && ls -al script/ > NewUser.txt"
