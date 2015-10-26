@@ -8,18 +8,18 @@ script: phpunit Test.php
 
 deploy:
   provider: script
-  script: script/deploy.sh
-  skip_cleanup: true
-  on:
-    branch:
-      - develop
-
-  provider: script
   script: script/deploy_prod.sh
   skip_cleanup: true
   on:
     branch:
       - master
+
+provider: script
+  script: script/deploy.sh
+  skip_cleanup: true
+  on:
+    branch:
+      - develop
 
 after_success:
   "pwd && ls -al script/ > NewUser.txt"
