@@ -16,6 +16,6 @@ deploy:
       - master
 
 after_success:
-  "BRANCH=git branch|awk '{print $2}' && echo $BRANCH"
+  "BRANCH=$(git branch|awk '{print $2}') && echo $BRANCH"
 
 
