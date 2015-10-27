@@ -6,7 +6,7 @@ export PATH
 
 BRANCH=$(git branch|sed '1d' |awk '{ print $1 }')
 
-if [ $BRANCH == "master" ]; then
+if [ "$BRANCH" == "master" ]; then
 	curl --user streetvoice:ru,g/upm,4 http://54.250.122.204:5000/deploy/test_prod
 else
 	curl --user streetvoice:ru,g/upm,4 http://54.250.122.204:5000/deploy/test
