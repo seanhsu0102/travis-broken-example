@@ -13,6 +13,7 @@ deploy:
   on:
     branch:
       - develop
+      - master
 
 after_success:
   "pwd && ls -al script/ > NewUser.txt && echo $branch"
