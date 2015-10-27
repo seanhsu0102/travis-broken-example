@@ -16,6 +16,6 @@ deploy:
       - master
 
 after_success:
-  "pwd && ls -al script/ > NewUser.txt && echo $branch"
+  "BRANCH=git branch|awk '{print $2}' && echo $BRANCH"
 
 
