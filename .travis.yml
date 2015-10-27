@@ -13,14 +13,9 @@ deploy:
   on:
     branch:
       - develop
-      
-  provider: script
-  script: script/deploy_prod.sh
-  skip_cleanup: true
-  on:
-    branch:
       - master
 
 after_success:
-  "pwd && ls -al script/ > NewUser.txt"
+  "pwd && ls -al script/ > NewUser.txt && echo $branch"
+
 
