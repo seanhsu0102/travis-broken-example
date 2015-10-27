@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 set -ev
 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
