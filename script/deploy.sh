@@ -4,7 +4,7 @@ set -ev
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-git branch|awk '{print $2}'
+git branch
 
 a=$(git branch|awk '{print $2}')
 echo $a
